@@ -1,11 +1,15 @@
 class student:
-    def __init__(self,name):
+    def __init__(self,name,marks):
         self.name=name
-    def average(self,mark1,mark2,mark3):
-        print(f"Average of {self.name} is {(mark1+mark2+mark3)/3}")
-    
-a=student("Jhon")
-a.average(1,2,3)
-b=student("Dany")
-b.average(4,5,6)
+        self.marks=marks
+    def average(self):
+        sum=0
+        for i in self.marks:
+            sum+=i
+        print(f"The average of {self.name} is {(sum)/len(self.marks)}")
         
+    
+a=student("John",[123,21,34,5,54])
+a.average()
+b=student("Dany",[54,123,21,34,5])
+b.average()

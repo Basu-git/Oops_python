@@ -13,3 +13,5 @@ a=student("John",[123,21,34,5,54])
 a.average()
 b=student("Dany",[54,123,21,34,5])
 b.average()
+a.name="Don"
+a.average()
